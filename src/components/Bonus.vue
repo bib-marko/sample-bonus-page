@@ -10,7 +10,7 @@
 
             <div v-if="!IS_DESKTOP" class="desc">
                 <p>
-                MAGLARO AT MANALO NG BONGGANG PAPREMYO, DITO LANG SA
+                ENJOY EXCITING PROMOS AND WIN AMAZING PRIZES, ONLY AT
                 <a href="https://megabet-paradise.com" target="_blank" rel="noopener noreferrer">MEGABET-PARADISE.COM</a>
                 </p>
             </div>
@@ -54,7 +54,7 @@
 
         <div v-if="IS_DESKTOP" class="desc">
             <p>
-            MAGLARO AT MANALO NG BONGGANG PAPREMYO, DITO LANG SA
+            ENJOY EXCITING PROMOS AND WIN AMAZING PRIZES, ONLY AT
             </p>   <a href="https://megabet-paradise.com" target="_blank" rel="noopener noreferrer">MEGABET-PARADISE.COM</a>
         </div>
         <img  @click="goToSite" v-if="IS_DESKTOP" src="/img/bonus/desktop-btn.png" class="play-btn" />
