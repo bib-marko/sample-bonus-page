@@ -1,7 +1,13 @@
 <template>
     <div class="desktop-temp">
         <div class="col-1">
-            <img src="/img/bonus/bonus-banner.png" class="details-desktop-img" />
+              <img v-if="IS_DESKTOP" src="/img/bonus/bonus-banner-desktop.png" class="details-desktop-img" :style="{
+              marginTop: '.5rem'
+            }" />
+            <img v-else src="/img/bonus/bonus-banner-mobile.png" class="details-desktop-img" :style="{
+              marginTop: '-2rem',
+              maxWidth: '240px',
+            }" />
 
             <div v-if="!IS_DESKTOP" class="desc">
                 <p>
@@ -110,9 +116,8 @@ const toggleMute = () => {
 }
 
 .details-desktop-img {
-    margin-top: -2rem;
+ 
     width: 100%;
-    max-width: 240px;
     height: auto;
 }
 
@@ -253,11 +258,12 @@ a:hover {
     .details-desktop-img {
         margin-top: -2rem;
         width: 100%;
-        max-width: 740px;
+        max-width: 840px;
         height: auto;
     }
 
-    .col-1 {  margin-right: 5rem;
+    .col-1 {  
+        margin-right: 5rem;
         order: 2;
         
     }
