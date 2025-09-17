@@ -6,12 +6,12 @@
             }" />
             <img v-else src="/img/bonus/bonus-banner-mobile.png" class="details-desktop-img" :style="{
               marginTop: '-2rem',
-              maxWidth: '240px',
+              maxWidth: '280px',
             }" />
 
             <div v-if="!IS_DESKTOP" class="desc">
                 <p>
-                ENJOY EXCITING PROMOS AND WIN AMAZING PRIZES, ONLY AT
+                YOUR GATEWAY TO PROMOS AND PRIZES IS HERE!
                 <a href="https://megabet-paradise.com" target="_blank" rel="noopener noreferrer">MEGABET-PARADISE.COM</a>
                 </p>
             </div>
@@ -55,7 +55,7 @@
 
         <div v-if="IS_DESKTOP" class="desc">
             <p>
-            ENJOY EXCITING PROMOS AND WIN AMAZING PRIZES, ONLY AT
+            YOUR GATEWAY TO PROMOS AND PRIZES IS HERE!
             </p>   <a href="https://megabet-paradise.com" target="_blank" rel="noopener noreferrer">MEGABET-PARADISE.COM</a>
         </div>
         <img  @click="goToSite" v-if="IS_DESKTOP" src="/img/bonus/desktop-btn.png" class="play-btn" />
@@ -116,13 +116,12 @@ const toggleMute = () => {
 }
 
 .details-desktop-img {
- 
     width: 100%;
     height: auto;
 }
 
 .desc {
-  margin-bottom: 2em;
+  margin-top: -2em;
 }
 
 .title-logo,
@@ -147,7 +146,7 @@ const toggleMute = () => {
 
 .play-btn {
   width: 100%;
-  max-width: 340px;
+  max-width: 360px;
   height: auto;
   margin-top: .5rem;
 }
@@ -287,9 +286,9 @@ a:hover {
 
     .play-btn {
         width: 100%;
-        max-width: 540px;
+        max-width: 740px;
         height: auto;
-        margin-bottom: 0;
+        margin-top: -5rem;
     }
 
     .play-btn {
@@ -302,6 +301,8 @@ a:hover {
         width: 100%;
         max-width: 740px;
         height: auto;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
     }
 
     a,
